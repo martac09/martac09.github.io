@@ -55,7 +55,7 @@ body {
 	margin: 100px auto;
 	width: 60%;
 }
-.carousel-indicators li {
+#testimonialCarousel .carousel-indicators li {
 	background-image: url("http://placehold.it/50x50/000000/ffffff");
 	background-position: center;
 }
