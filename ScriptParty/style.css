@@ -1,0 +1,12 @@
+th {
+	text-align: center;
+}
+.active-background {
+	background-color: yellow;
+}
+.left-container, .right-container {
+	padding-top: 300px;
+	padding-bottom: 300px;
+	cursor: pointer;
+	text-align: center;
+}
