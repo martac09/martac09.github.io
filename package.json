@@ -1,0 +1,25 @@
+{
+  "name": "martac09.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martac09/martac09.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martac09/martac09.github.io/issues"
+  },
+  "homepage": "https://github.com/martac09/martac09.github.io#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
