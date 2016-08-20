@@ -1,12 +1,16 @@
 body {
 	font-family: 'Open Sans', sans-serif; 
 }
+.no-padding {
+	padding: 0;
+}
 .navbar-height {
 	height: inherit;
 }
 .navbar-color {
 	background-color: #fff;
 	border: none;
+	margin: 0;
 }
 .nav-height {
 	padding: 20px 0;
@@ -29,9 +33,34 @@ body {
 	text-align: center;
 	font-size: 60px;
 }
-.picture img {
-	height: auto;
+.picture {
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+}
+.picture:before{
+	content: "";
+	position: absolute;
 	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .5;
+}
+.picture1 {
+	background-image: url('https://images.unsplash.com/uploads/141172692104151d94dd4/4f900e54?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=963&q=80&cs=tinysrgb');
+}
+.picture2 {
+	background-image: url('https://images.unsplash.com/uploads/1411589136111adff7b3b/ae2e3000?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
+}
+.picture3 {
+	background-image: url('https://images.unsplash.com/photo-1461601222480-db4eb663f579?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=844&q=80&cs=tinysrgb');
+}
+.carousel-indicators .active {
+    background-color: #D5AA6D;
+}
+.carousel-indicators li {
+    border: 1px solid #D5AA6D;
+	border-radius: 0;
 }
 .main-text {
     position: absolute;
