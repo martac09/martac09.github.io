@@ -75,7 +75,7 @@ function checkResult() {
 		} else {
 			document.getElementById("roundResult").innerHTML = "Computer wins the game!";
 		}
-		var buttons = getElementsByClassName("pick-button");
+		var buttons = document.getElementsByClassName("pick-button");
 		for (i = 0; i < buttons.length; i++) {
 			buttons[i].style.display = "none";
 		}
