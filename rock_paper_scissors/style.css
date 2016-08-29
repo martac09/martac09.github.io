@@ -62,3 +62,12 @@ button:focus {
 	font-size: 2em;
 	color: #FE5F55;
 }
+@media(max-width: 767px) {
+	.button-container {
+		display: inline-block;
+	}
+	.pick-button {
+		float: right;
+		margin: -20px 10px;
+	}
+}
