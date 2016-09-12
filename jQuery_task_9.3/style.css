@@ -1,0 +1,24 @@
+#carousel {
+	margin: 30px auto;
+	width: 700px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#carousel ul {
+	list-style-type: none;
+	width: 3500px;
+	-webkit-appearance: none;
+	padding: 0;
+}
+#carousel li {
+	float: none;
+	display: inline-block;
+}
+.button-display {
+	display: inline-block;
+	background-image: none !important;
+}
+.active {
+	background-color: #fff;
+}
