@@ -9,3 +9,7 @@ Smartphone.prototype.printInfo = function() {
 var SamsungS4 = new Smartphone("Samsung", "1000", "black");
 var iPhoneS6 = new Smartphone("Apple", "2500", "white");
 var HuaweiP9 = new Smartphone("Huawei", "1100", "black");
+
+SamsungS4.printInfo();
+iPhoneS6.printInfo();
+HuaweiP9.printInfo();
