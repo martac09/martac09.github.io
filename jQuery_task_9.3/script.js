@@ -3,7 +3,7 @@ $(function() {
 	function moveFirstSlide() {
 			var firstItem = carouselList.find("li:first");
 			var lastItem = carouselList.find("li:last");
-			lastItem.after("firstItem");
+			lastItem.after(firstItem);
 			carouselList.css({'margin-left': 0});
 			increaseImgNumber();
 			changeIndicator();
@@ -11,7 +11,7 @@ $(function() {
 	function changeSlides() {		
 		carouselList.animate({'margin-left':-700}, 500, moveFirstSlide());
 	}
-	setInterval(changeSlides, 3000);
+	setInterval(changeSlides, 10000);
 
 	var currentImg = 0;
 	var imgCount = carouselList.children().length;
@@ -29,7 +29,7 @@ $(function() {
 	var slidesArray = $("ul li");
 
 	$('.carousel-indicators li').click(function() {
-		var slideTo = $(this).attr('data-slide-to');
+		var slideTo = parseInt($(this).attr('data-slide-to'));
 		var numberOfMoves = 0;
 		if (slideTo >= currentImg) {
 			numberOfMoves = slideTo - currentImg;
