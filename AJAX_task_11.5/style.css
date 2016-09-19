@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: linear-gradient(#00aced, #1dcaff);
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	height: 100vh;
+	overflow-y: hidden;
+}
+header {
+	text-align: center;
+}
+.head-text {
+	margin: 30px auto;
+}
+.box {
+	margin: 120px auto;
+	text-align: center;
+}
+.quote {
+	margin-bottom: 40px;
+}
+.button-section {
+	text-align: center;
+}
+.button-section button {
+	display: inline-block;
+	margin: 30px 100px;
+	font-family: 'Raleway', sans-serif;
+}
+.button-section button:active, .button-section button:focus {
+	outline: 0;
+}
+.trigger, .twitter-button {
+	padding: 20px 50px;
+	background-color: transparent;
+	border: 2px #fff solid;
+	text-transform: uppercase;
+	font-size: 1.4em;
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+}
+.trigger:after {
+	position: absolute;
+	content: "";
+	height: 0;
+	width: 100%;
+	transition: .3s;
+	top: 0;
+	left: 0;
+	bottom: auto;
+}
+.trigger:hover:after {
+	background-color: transparent;
+	border-bottom: 5px #fff solid;
+	height: calc(100% - 5px);
+}
+.twitter-button {
+	font-size: 1.2em;
+	border-radius: 50%;
+	padding: 0;
+	height: 85px;
+	width: 85px;
+}
+.twitter-button a {
+	color: #fff;
+}
+.twitter-button:hover {
+	box-shadow: rgba(0, 0, 0, 1) 0 0 30px 0 inset;
+	border: none;
+}

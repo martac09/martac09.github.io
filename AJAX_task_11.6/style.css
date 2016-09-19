@@ -1,0 +1,13 @@
+.container {
+	max-width: 1200px;
+	text-align: center;
+}
+#countries {
+	list-style-type: none;
+}
+table {
+	text-align: left;
+}
+.countries-table {
+	margin: 40px auto;
+}

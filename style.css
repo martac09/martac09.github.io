@@ -1,3 +1,27 @@
 .body {
 	text-align: center;
 }
+.block {
+	position: relative;
+}
+.submenu {
+	display: none;
+	position: absolute;
+	padding: 0;
+	background-color: #f8f8f8;
+	width: 100%;
+}
+.submenu li {
+	display: block;
+	padding: 15px;
+}
+.submenu a {
+	text-decoration: none;
+	color: #777777;
+}
+.block:hover .submenu {
+	display: block;
+}
+.submenu li:hover a {
+	color: #4f4f4f;
+}
