@@ -14,15 +14,6 @@ $(function() {
 		this.name = name;
 		this.$element = createColumn();
 		
-		Column.prototype = {
-			addCard: function(card) {
-				this.$element.children('ul').append(card.$element);
-			},
-			removeColumn: function() {
-				this.$element.remove();
-			}
-		}
-
 		function createColumn() {
 			var $column = $('<div>').addClass('column');
 			var $columnTitle = $('<h2>').addClass('column-title').text(self.name);
@@ -44,6 +35,16 @@ $(function() {
 		
 	}
 
+	Column.prototype = {
+			addCard: function(card) {
+				this.$element.children('ul').append(card.$element);
+			},
+			removeColumn: function() {
+				this.$element.remove();
+			}
+		}
+
+
 	function Card(description) {
 		var self = this;
 		this.id = randomString();
@@ -63,12 +64,13 @@ $(function() {
 				 .append($cardDescription);
 			return $card;
 		}
-		Card.prototype = {
+	}
+
+	Card.prototype = {
 			removeCard: function() {
 				this.$element.remove();
 			}
 		}
-	}
 
 	var board = {
 		name: "Tablica Kanban",
@@ -79,8 +81,9 @@ $(function() {
 		$element: $('#board .column-container')
 	}
 	function initSortable() {
-    	$('.card-list').sortable({
-      	connectWith: '.card-list',
+    	$('.column-card-list').sortable({
+      	connectWith: '.column-card-list',
+      	containment: "document",
       	placeholder: 'card-placeholder'
     	}).disableSelection();
   	}
